@@ -1,4 +1,4 @@
-const { sum } =  require('./utils/math.js');
+const { sum, subtraction } =  require('./utils/math.js');
 
 // 自制minijest。
 let result, expected;
@@ -8,4 +8,11 @@ expected = 3;
 
 if (result !== expected) {
     throw new Error(`${result} is not equal to ${expected}`);
+}
+
+result = subtraction(2, 1)
+expected = 1;
+
+if (result !== expected) {
+    throw new Error(`${result} is not equal to ${expected}`)
 }
